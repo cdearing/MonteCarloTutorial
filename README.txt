@@ -1,8 +1,8 @@
-CAP REU Monte Carlo Methods Tutorial
+Monte Carlo Methods Tutorial
 Sheila Kannappan
-committed/updated June 2, 2015
+forked from CAP REU version September 3, 2016
 
 Contains:
-- pdf guide
+- markdown guide
 - python codes to be modified/completed for exercises
 - solution codes for selected exercises
