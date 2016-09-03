@@ -26,7 +26,7 @@ Exercise 2: Use _random.seed_ to control the random numbers in x and y such that
 Exercise 3: Use _random.gauss_ to generate a variable u (for &quot;uncertainty&quot;) consisting of 1000 random numbers with mean zero and standard deviation  = 1. Create a histogram of the values to verify that they look like a Gaussian distribution1(σ2π)e−u22σ2
 .
 
-![](https://github.com/galastrostats/MonteCarloTutorial/gaussianconfidenceintervals.png)
+![alt text](https://github.com/galastrostats/MonteCarloTutorial/blob/master/gaussianconfidenceintervals.png "here it is")
 
 The Gaussian distribution is the most commonly used model for random uncertainties (non-systematic errors/noise) in data.  In particular:
 
