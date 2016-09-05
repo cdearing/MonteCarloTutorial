@@ -40,15 +40,15 @@ _The python package &quot;numpy&quot; enables array math, such as you may have u
 
 Import numpy and use it to compute and overplot the expected Gaussian function shape on top of the histogram you made.
 
-Exercise 4: Use numpy to convert u into an array and use numpy&#39;s _where_ function to determine what percentage of the time the variable u lies inside &plusmn;1&sigma;If you have an array of data with error bars equal to u, how often should the fit line go through the error bars?
+**Exercise 4:** Use numpy to convert u into an array and use numpy&#39;s _where_ function to determine what percentage of the time the variable u lies inside &plusmn;1&sigma;If you have an array of data with error bars equal to u, how often should the fit line go through the error bars?
 
 ## II. Areas or Volumes of Enclosed Regions
 
 A basic application of random number generation is in measuring the areas or volumes of enclosed regions, especially non-rectangular regions for which a direct measurement would be difficult. The method is to choose points randomly in a rectangular region enclosing the region of interest, then find the fraction of the points that land inside the region of interest in order to assess its subarea/subvolume.
 
-Exercise 1: Use _random.uniform_ to measure the area of a circle with radius 1 and thus to measure the value of . How many darts do you need to get a good, consistent estimate?
+**Exercise 1:** Use _random.uniform_ to measure the area of a circle with radius 1 and thus to measure the value of . How many darts do you need to get a good, consistent estimate?
 
-Exercise 2: Use numpy&#39;s array version of random to measure the area under the Gaussian from -1&sigma; to +1&sigma;. Think about why this area is equal to the percentage of u values between &plusmn;1&sigma; even though u was created with _random.gauss_.
+**Exercise 2:** Use numpy&#39;s array version of random to measure the area under the Gaussian from -1&sigma; to +1&sigma;. Think about why this area is equal to the percentage of u values between &plusmn;1&sigma; even though u was created with _random.gauss_.
 
 ## III. Random Selection from a Non-Uniform Distribution
 
@@ -58,9 +58,9 @@ The probability of a point having a given radius increases with the area of the 
 
 ![](https://github.com/galastrostats/MonteCarloTutorial/blob/master/randomdotsincircle.png)
 
-Exercise 1: First, use numpy&#39;s version of _random_ to select radii randomly in a circle by inverse transform sampling. Second, compare the distribution of radii selected by this method to the distribution of radii obtained by selecting &quot;hits&quot; in a circle as in Exercise 1 from Part II. (Note – the second task requires that you generate a new block of code, not just tweak the code provided. You should try to find bits of earlier code that you can copy/imitate/modify to make an array of radii, then plot the new radii in a histogram on top of a histogram of the original radii.) How do the histograms compare? Explain.
+**Exercise 1:** First, use numpy&#39;s version of _random_ to select radii randomly in a circle by inverse transform sampling. Second, compare the distribution of radii selected by this method to the distribution of radii obtained by selecting &quot;hits&quot; in a circle as in Exercise 1 from Part II. (Note – the second task requires that you generate a new block of code, not just tweak the code provided. You should try to find bits of earlier code that you can copy/imitate/modify to make an array of radii, then plot the new radii in a histogram on top of a histogram of the original radii.) How do the histograms compare? Explain.
 
-Exercise 2: Use numpy&#39;s version of _random_ to select values from a Gaussian distribution using inverse transform sampling. In this exercise you are essentially recreating _random.gauss_. Hint: the integral of a Gaussian function centered on 0 is
+**Exercise 2:** Use numpy&#39;s version of _random_ to select values from a Gaussian distribution using inverse transform sampling. In this exercise you are essentially recreating _random.gauss_. Hint: the integral of a Gaussian function centered on 0 is
 
 <img src="https://latex.codecogs.com/png.latex?\int_{-\infty}^u\frac{1}{\sigma\sqrt{2\pi}}\exp{\left(-\frac{u^2}{2\sigma^2}\right)}du=0.5+0.5&space;erf(u/\sqrt{2})" />
 
