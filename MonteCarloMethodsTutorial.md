@@ -30,11 +30,9 @@ Please look over the description of the &quot;random&quot; package for python he
 
 The Gaussian distribution is the most commonly used model for random uncertainties (non-systematic errors/noise) in data.  In particular:
 
-1. (i)the error bars on data values are typically set to equal the expected &plusmn;1&sigma; variations due to random measurement errors/noise
+1. The error bars on data values are typically set to equal the expected &plusmn;1&sigma; variations due to random measurement errors/noise _(caveat: some research fields use &plusmn;2&sigma; error bars)_
 
-_(caveat: some research fields use &plusmn;2&sigma; error bars)_
-
-1. (ii)the signal-to-noise (S/N) ratios for data values representing &quot;detections&quot; are typically given in terms of the background noise (i.e., S/N=3 means S=3&sigma; (caveat: if the signal is extended in time/space/&lambda;/etc., it is really a sum of several data points and you must use error propagation rules)_
+2. The signal-to-noise (S/N) ratios for data values representing &quot;detections&quot; are typically given in terms of the background noise (i.e., S/N=3 means S=3&sigma; (caveat: if the signal is extended in time/space/&lambda;/etc., it is really a sum of several data points and you must use error propagation rules)_
 
 From the diagram, we see a S/N&gt;3 detection has only 0.1% probability of occurring by chance, so we say it is detected &quot;at 99.9% confidence.&quot; For data values, the error bars are referred to as &quot;confidence intervals.&quot; From the diagram, &plusmn;1&sigma; corresponds to the &quot;68% confidence interval.&quot;
 
@@ -56,7 +54,7 @@ Exercise 2: Use numpy&#39;s array version of random to measure the area under th
 
 It may happen that you want to select random numbers from a distribution of your own. For example, suppose we want the distribution of radius values for a set of points drawn randomly from within a circle as shown below.
 
-The probability of a point having a given radius increases with the area of the annulus that radius lies in, so <img src="https://latex.codecogs.com/png.latex?p(r)dr=2\pirdr\pi&space;R^2" />where R is the radius of the circle. (Note that the integral <img src="https://latex.codecogs.com/png.latex?\int_0^Rp(r)dr=1" /> as is required for a probability distribution.) The trick to computing the (non-uniform) probability distribution for _r_ is to map values _x_ from a uniform distribution [0, 1] onto the values of _r_ in such a way that the correct frequency of values is produced. A one-to-one mapping in which the _integrated_ probability out to _r_ in [0, R] is equal to the integrated probability out to _x_ in [0, 1] does the trick. In &quot;inverse transform sampling,&quot; we first generate values using a uniform random number generator, then map them to values drawn from another probability distribution using this integral mapping.
+The probability of a point having a given radius increases with the area of the annulus that radius lies in, so <img src="https://latex.codecogs.com/png.latex?\inline&space;p(r)dr=\frac{2\pi&space;rdr}{\pi&space;R^2}" />where R is the radius of the circle. (Note that the integral <img src="https://latex.codecogs.com/png.latex?\inline&space;\int_0^Rp(r)dr=1" /> as is required for a probability distribution.) The trick to computing the (non-uniform) probability distribution for _r_ is to map values _x_ from a uniform distribution [0, 1] onto the values of _r_ in such a way that the correct frequency of values is produced. A one-to-one mapping in which the _integrated_ probability out to _r_ in [0, R] is equal to the integrated probability out to _x_ in [0, 1] does the trick. In &quot;inverse transform sampling,&quot; we first generate values using a uniform random number generator, then map them to values drawn from another probability distribution using this integral mapping.
 
 ![](https://github.com/galastrostats/MonteCarloTutorial/blob/master/randomdotsincircle.png)
 
