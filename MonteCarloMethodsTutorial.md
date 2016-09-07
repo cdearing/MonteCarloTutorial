@@ -36,11 +36,11 @@ The Gaussian distribution is the most commonly used model for random uncertainti
 
 From the diagram, we see a S/N&gt;3 detection has only 0.1% probability of occurring by chance, so we say it is detected &quot;at 99.9% confidence.&quot; For data values, the error bars are referred to as &quot;confidence intervals.&quot; From the diagram, &plusmn;1&sigma; corresponds to the &quot;68% confidence interval.&quot;
 
-_The python package &quot;numpy&quot; enables array math, such as you may have used in matlab or IDL. The solutions to Exercises 3 &amp; 4 illustrate some of what you can do with numpy._
+_The python package &quot;numpy&quot; enables array math. The solutions to Exercises 3 &amp; 4 illustrate some of what you can do with numpy._
 
 Import numpy and use it to compute and overplot the expected Gaussian function shape on top of the histogram you made.
 
-**Exercise 4:** Use numpy to convert u into an array and use numpy&#39;s _where_ function to determine what percentage of the time the variable u lies inside &plusmn;1&sigma;If you have an array of data with error bars equal to u, how often should the fit line go through the error bars?
+**Exercise 4:** Use numpy to convert u into an array and use numpy&#39;s _where_ function to determine what percentage of the time the variable u lies inside &plusmn;1&sigma;. If you have an array of data with error bars equal to u, how often should the fit line go through the error bars?
 
 ## II. Areas or Volumes of Enclosed Regions
 
@@ -64,7 +64,7 @@ The probability of a point having a given radius increases with the area of the 
 
 <img src="https://latex.codecogs.com/png.latex?\int_{-\infty}^u\frac{1}{\sigma\sqrt{2\pi}}\exp{\left(-\frac{u^2}{2\sigma^2}\right)}du=0.5+0.5&space;erf(u/\sqrt{2})" />
 
-. You can import &quot;erf&quot; from scipy.special.
+You can import &quot;erf&quot; from scipy.special.
 
 ## IV. For Further Inquiry
 
@@ -72,6 +72,6 @@ Random number generation is useful in many contexts. For example, you may wish t
 
 [http://www.ligo.org/news/blind-injection.php](http://www.ligo.org/news/blind-injection.php)
 
-Another technique you may want to try is &quot;bootstrapping,&quot; actually a family of techniques all of which use random resampling of a real data set to estimate the uncertainties on parameters or model fits characterizing that data set.
+Another technique that relies on Monte Carlo methods is &quot;bootstrapping,&quot; actually a family of techniques all of which use random resampling of a real data set to estimate the uncertainties on parameters or model fits characterizing that data set.
 
 [http://en.wikipedia.org/wiki/Bootstrapping\_%28statistics%29](http://en.wikipedia.org/wiki/Bootstrapping_%28statistics%29)
