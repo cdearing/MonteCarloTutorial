@@ -1,10 +1,10 @@
 # Monte Carlo Methods
 
-### Sheila Kannappan, June 2, 2015
+### Sheila Kannappan
 
 > _&quot;Monte Carlo methods&quot; is a term covering pretty much any use of pseudo-randomness to help solve any kind of problem._ – Niall O&#39;Higgins
 
-Copy all &quot;.py&quot; files in https://github.com/capprogram/MonteCarloTutorial to your own working space – these files include partial answers to the exercises below, left incomplete for you to finish. Select exercises have solutions provided with a &quot;.solns&quot; extension. You should perform this tutorial in Anaconda under a Windows/Mac OS or in ipython under linux (typing &quot;ipython&quot; starts python 2.7 in a helpful interactive mode; in ipython type &quot;run code&quot; to execute code.py).
+Copy all &quot;.py&quot; files in https://github.com/galastrostats/MonteCarloTutorial to your own working space – these files include partial answers to the exercises below, left incomplete for you to finish. Select exercises have solutions provided with a &quot;.solns&quot; extension. You should perform this tutorial in Anaconda under a Windows/Mac OS or in ipython under linux (typing &quot;ipython&quot; starts python 2.7 in a helpful interactive mode; in ipython type &quot;run code&quot; to execute code.py).
 
 # I. Random Number Generators
 
