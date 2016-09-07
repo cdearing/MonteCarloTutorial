@@ -3,8 +3,6 @@ from __future__ import division # make division act like python3 even if 2.7
 
 import random
 import matplotlib.pyplot as plt
-import pylab
-pylab.ion()
 import numpy as np
 
 uu=[] # variable named uu to avoid single-letter variable name
