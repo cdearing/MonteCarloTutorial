@@ -3,8 +3,6 @@
 
 import random
 import matplotlib.pyplot as plt
-import pylab
-pylab.ion() 
 import numpy as np
 
 uu=[] # variable named uu to avoid single-letter variable name
