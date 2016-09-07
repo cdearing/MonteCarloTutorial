@@ -5,8 +5,6 @@ import numpy.random as npr
 import numpy as np
 from scipy.special import erf
 import matplotlib.pyplot as plt
-import pylab
-pylab.ion()
 
 # notes: probability distribution, its integral, and its reverse lookup
 #### next 3 lines are pseudo-code, do not uncomment but use for reference
