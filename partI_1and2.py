@@ -1,7 +1,5 @@
 import random
 import matplotlib.pyplot as plt
-import pylab
-pylab.ion() 
 
 x=[]
 y=[]
