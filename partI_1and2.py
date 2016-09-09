@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 x=[]
 y=[]
 
-#random.seed(555)
+random.seed(555)
 for i in range(0,10):
    x.append(random.random())
 
-#random.seed(555)
+random.seed(555)
 for i in range(0,10):
    y.append(random.random())
 

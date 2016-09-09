@@ -3,7 +3,7 @@
 
 import random
 
-DARTS=10000 # how many darts to you need to get a good, consistent estimate?
+DARTS=10000000 # how many darts to you need to get a good, consistent estimate?
 hits = 0
 throws = 0
 for i in range (0, DARTS):

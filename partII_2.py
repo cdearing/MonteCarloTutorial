@@ -21,7 +21,7 @@ gaussfunct= np.exp((-1.*xvals**2)/(2.*sigma**2))/(sigma*np.sqrt(2.*3.14159))
 hits=np.size(np.where(yvals <= gaussfunct))
 
 # use equation area = (hits/throws) * rectangle area
-#rectarea = ?? # fill in based on equations above
-#area = (hits/throws)*rectarea  # integer division here, watch out!
+rectarea = 2.* sigma / (sigma*np.sqrt(2.*3.14159)) # fill in based on equations above
+area = (hits/throws)*rectarea  # integer division here, watch out!
 
-#print("area is %s" % area)
+print("area is %s" % area)
